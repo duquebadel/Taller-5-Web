@@ -1,0 +1,128 @@
+body {
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+}
+
+.container-calendario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selectores-vista {
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.selectores-vista button {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.selectores-vista button:hover {
+    background-color: #ffc107; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 110%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.contenido-modal {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.contenido-modal input,
+.contenido-modal textarea,
+.contenido-modal select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+.contenido-modal button {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.contenido-modal button:hover {
+    background-color: #ffc107; 
+}
+
+.encabezado-calendario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.encabezado-calendario button {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.encabezado-calendario button:hover {
+    background-color:#ffc107 ;
+}
+
+.dias-calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dias-calendario div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.dias-calendario div:hover {
+    background-color: #f0f0f0; 
+}
+
+.hoy {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.evento {
+    background-color: #efff0d;
+    color: #000;
+}

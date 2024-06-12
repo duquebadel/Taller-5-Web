@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario De Eventos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div class="container-calendario">
+        <div class="selectores-vista">
+            <button onclick="mostrarVistaMensual()">Mensual</button>
+            <button onclick="mostrarVistaAnual()">Anual</button>
+            <button onclick="mostrarVistaDiaria()">Diario</button>
+        </div>
+        <div class="encabezado-calendario">
+            <button onclick="anterior()">< Atras</button>
+            <h2 id="titulo-calendario"></h2>
+            <button onclick="siguiente()">Siguiente ></button>
+        </div>
+        <div id="cuerpo-calendario" class="dias-calendario"></div>
+    </div>
+
+    <div id="modal-evento" class="modal">
+        <div class="contenido-modal">
+            <h3 id="titulo-modal">Agrega un evento Evento</h3>
+            Fecha del Evento (Ya seleccionado)
+            <input type="date" id="fecha-evento">
+
+            Hora del Evento (Intervalo de 30 Minutos)
+            <select id="hora-evento">
+            </select>
+            Descripcion
+            <input type="text" id="descripcion-evento" >
+            Participantes
+            <textarea id="participantes-evento"></textarea>
+            <button onclick="guardarEvento()">Guardar Evento</button>
+            <button onclick="eliminarEvento()">Eliminar</button>
+            <button onclick="cerrarModal()">Salir</button>
+        </div>
+    </div>
+
+    <script src="../js/utilidades.js"></script>
+</body>
+
+</html>
